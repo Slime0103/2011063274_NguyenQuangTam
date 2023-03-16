@@ -25,6 +25,25 @@ textarea {
 
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-    background-color: #777;
+    background-color: #00ff90;
     border-color: #fff
+}
+.navbar-inverse {
+    background-color: #ff0000;
+    border-color: #080808;
+}
+.course{
+    list-style:none;
+}
+.course > li .date{
+    text-align: center;
+    background-color :pink;
+    color: aliceblue;
+    width: 60px;
+    border-radius: 8px;
+}
+.course > li.details{
+    position: absolute;
+    top: 0;
+    left:70px;
 }
