@@ -10,6 +10,7 @@ using System.Web.Http;
 
 namespace _2011063274_NguyenQuangTam.Controllers
 {
+    [Authorize]
     public class FollowingsController : ApiController
     {
         private readonly ApplicationDbContext _dbContext;
@@ -30,6 +31,7 @@ namespace _2011063274_NguyenQuangTam.Controllers
                 FolloweeId = followingDto.FolloweeId,
             };
             _dbContext.Followings.Add(folowing);
+            _dbContext.SaveChanges();
             return Ok();
         }
     }
